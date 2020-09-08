@@ -32,7 +32,7 @@ public:
 
     void addData1(){
         data1++;
-        addUint16(1,data1);
+        addUint16(0,data1);
     }
 
     void addData2(){
@@ -41,11 +41,11 @@ public:
     }
 
     uint16_t getDatat1(){
-        readUint16(1);
+        readUint16(0);
     };
 
     uint16_t getDatat2(){
-        readUint16(2);
+        readUint16(1);
     };
 
 private:
