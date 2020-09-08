@@ -41,11 +41,11 @@ public:
     }
 
     uint16_t getDatat1(){
-        readUint16(0);
+        return readUint16(0);
     };
 
     uint16_t getDatat2(){
-        readUint16(1);
+        return readUint16(1);
     };
 
 private:
