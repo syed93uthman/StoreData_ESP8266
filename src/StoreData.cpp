@@ -9,5 +9,5 @@ void StoreData::addUint16(int slot , uint16_t data){
 
 uint16 StoreData::readUint16(int slot){
     slot *= 2;
-    return word(EEPROM.read(slot),EEPROM.read(slot+1));
+    return word((uint16_t)EEPROM.read(slot),(uint16_t)EEPROM.read(slot+1));
 }
