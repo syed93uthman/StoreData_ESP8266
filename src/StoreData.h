@@ -39,6 +39,14 @@ public:
         data2++;
         addUint16(1,data2);
     }
+    
+    void resetData1(){
+        addUint16(0,0);
+    }
+
+    void resetData2(){
+        addUint16(1,0);
+    }
 
     uint16_t getDatat1(){
         return readUint16(0);
@@ -52,7 +60,7 @@ private:
 
     void addUint16(int slot , uint16_t data);
     uint16 readUint16(int slot);
-
+    
 };
 
 
